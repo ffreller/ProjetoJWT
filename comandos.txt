@@ -1,0 +1,3 @@
+dotnet ef migrations add ""
+dotnet ef databse update
+dotnet ef migrations remove

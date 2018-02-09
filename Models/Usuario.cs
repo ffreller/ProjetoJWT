@@ -29,6 +29,10 @@ namespace ProjetoJWT.Models
         [DataType(DataType.Date)]
         public DateTime DataNascimento { get; set; }
 
+        [Required]
+        [StringLength(14)]
+        public string Cpf { get; set; }
+
         public ICollection<UsuarioPermissao> UsuariosPermissoes { get; set; }
     }
 }
